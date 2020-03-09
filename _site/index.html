@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="generator" content="Jekyll">
+
+	<title>veronica | codes</title>
+  <meta name="description" content="A minimal, responsive, ready to use blog template, built with Jekyll.">
+
+	<!-- CSS & fonts -->
+	<link rel="stylesheet" href="/css/main.css">
+
+	<!-- RSS -->
+	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+</head>
+
+
+<body>
+	<div id="wrap">
+	  	
+	  	<!-- Navigation -->
+	  	<nav id="nav">
+	<div id="nav-list">
+		<a href="/">Home</a>
+
+		<!-- Nav pages -->
+	  
+	    
+	  
+	    
+	      <a href="/glossary" title="Glossary">Glossary</a>
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+    
+    <!-- Nav links -->
+	  <a href="http://veronicacannon.com">Me</a>
+
+
+	</div>
+  
+  <!-- Nav footer -->
+	
+	  <footer>
+	
+	<span>version 1.0.0</span>
+
+</footer>
+	
+
+</nav>
+
+    
+    <!-- Icon menu -->
+	  <a id="nav-menu">
+	  	<div id="menu"></div>
+	  </a>
+
+      <!-- Header -->
+      
+        <header id="header" class="parent justify-spaceBetween">
+  <div class="inner w100 relative">
+    <span class="f-left">  
+      <a href="/">
+        <h1>
+          <span>veronica </span>| codes
+        </h1>
+      </a>
+    </span>
+    <span id="nav-links" class="absolute right bottom">
+      <!-- Nav pages -->
+	    
+	      
+	    
+	      
+	        <a href="/glossary" title="Glossary">Glossary</a>
+	      
+	    
+	      
+	    
+	      
+	    
+	      
+	    
+	      
+	    
+	      
+	    
+      
+      <!-- Nav links -->
+	    <a href="http://veronicacannon.com">Me</a>
+
+
+    </span>
+  </div>
+</header>
+
+
+
+
+      
+
+    <!-- Main content -->
+	  <div id="container">
+		  
+		<main>
+
+			<!-- Posts -->
+<ul id="posts">
+
+	
+
+	  <li class="post">
+	  	<h2><a href="/structs">Ruby Structs Example</a></h2>
+      <time datetime="2020-03-07T00:00:00-08:00" class="by-line"> <i>07 Mar 2020</i> </time>
+	  	<p><p>Structs are a built-in Ruby class that can act like a custom class.  They are great for testing, debugging and playing.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">LunchOrder</span> <span class="o">=</span> <span class="no">Struct</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:drink</span><span class="p">,</span> <span class="ss">:food</span><span class="p">)</span>
+<span class="n">event_order</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">event_order</span> <span class="o">&lt;&lt;</span> <span class="no">LunchOrder</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'hakeem'</span><span class="p">,</span> <span class="s1">'water'</span><span class="p">,</span> <span class="s1">'Mixed Veggie'</span><span class="p">)</span>
+<span class="n">event_order</span> <span class="o">&lt;&lt;</span> <span class="no">LunchOrder</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'selena'</span><span class="p">,</span> <span class="s1">'mango lasse'</span><span class="p">,</span> <span class="s1">'Bangkok Dumplings'</span><span class="p">)</span>
+<span class="n">event_order</span> <span class="o">&lt;&lt;</span> <span class="no">LunchOrder</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="s1">'jingyan'</span><span class="p">,</span> <span class="s1">'tea'</span><span class="p">,</span> <span class="s1">'Yellow Curry'</span><span class="p">)</span>
+<span class="n">drinks</span> <span class="o">=</span> <span class="n">event_order</span><span class="p">.</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:drink</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Structs are compared by value equality rather than referential equality.  If two struct objects have the same value they are equal. Classes with the same values are not equal.</p>
+
+<h3 id="references">references</h3>
+
+<p><a href="https://www.leighhalliday.com/ruby-struct">https://www.leighhalliday.com/ruby-struct</a></p>
+
+<p><a href="https://blog.bigbinary.com/2018/01/16/ruby-2-5-allows-creating-structs-with-keyword-arguments.html">https://blog.bigbinary.com/2018/01/16/ruby-2-5-allows-creating-structs-with-keyword-arguments.html</a></p>
+
+<h4 id="keyword-parameters-in-structs-were-introduced-in-ruby-25">Keyword parameters in structs were introduced in Ruby 2.5</h4>
+</p>
+	  </li>
+
+    
+
+	  <li class="post">
+	  	<h2><a href="/long-lines">How to Split Long Lines in Rspec</a></h2>
+      <time datetime="2020-03-03T00:00:00-08:00" class="by-line"> <i>03 Mar 2020</i> </time>
+	  	<p><p>It can be challenging to know where to break a long line in ruby.  Especially when writing tests in rspec.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">RSpec</span><span class="p">.</span><span class="nf">describe</span> <span class="no">PostHelper</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="ss">:helper</span> <span class="k">do</span>
+  <span class="n">describe</span> <span class="s1">'#markdown'</span> <span class="k">do</span>
+    <span class="n">it</span> <span class="s1">'returns code blocks'</span> <span class="k">do</span>
+      <span class="n">blog_text</span> <span class="o">=</span> <span class="s2">"```ruby</span><span class="se">\n</span><span class="s2">Hello, World!</span><span class="se">\n</span><span class="s2">```"</span>
+      <span class="n">expect</span><span class="p">(</span><span class="n">helper</span><span class="p">.</span><span class="nf">markdown</span><span class="p">(</span><span class="n">blog_text</span><span class="p">)).</span><span class="nf">to</span> <span class="n">eq</span><span class="p">(</span><span class="s2">"&lt;pre&gt;&lt;code class=</span><span class="se">\"</span><span class="s2">ruby</span><span class="se">\"</span><span class="s2">&gt;Hello, World!</span><span class="se">\n</span><span class="s2">&lt;/code&gt;&lt;/pre&gt;</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>One technique is to find the method call, <code class="highlighter-rouge">.to</code> in the example above, and break it there.</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="no">RSpec</span><span class="p">.</span><span class="nf">describe</span> <span class="no">PostHelper</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="ss">:helper</span> <span class="k">do</span>
+  <span class="n">describe</span> <span class="s1">'#markdown'</span> <span class="k">do</span>
+    <span class="n">it</span> <span class="s1">'returns code blocks'</span> <span class="k">do</span>
+      <span class="n">blog_text</span> <span class="o">=</span> <span class="s2">"```ruby</span><span class="se">\n</span><span class="s2">Hello, World!</span><span class="se">\n</span><span class="s2">```"</span>
+      <span class="n">expect</span><span class="p">(</span><span class="n">helper</span><span class="p">.</span><span class="nf">markdown</span><span class="p">(</span><span class="n">blog_text</span><span class="p">)).</span>
+        <span class="nf">to</span> <span class="n">eq</span><span class="p">(</span><span class="s2">"&lt;pre&gt;&lt;code class=</span><span class="se">\"</span><span class="s2">ruby</span><span class="se">\"</span><span class="s2">&gt;Hello, World!</span><span class="se">\n</span><span class="s2">&lt;/code&gt;&lt;/pre&gt;</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p><a href="https://docs.rubocop.org/en/stable/">Rubocop</a> can help improve your ruby style.  Rubocop is available as an extension in Visual Studio code.</p>
+</p>
+	  </li>
+
+    
+
+	  <li class="post">
+	  	<h2><a href="/lambdas">Ruby Lambdas Example</a></h2>
+      <time datetime="2020-03-02T00:00:00-08:00" class="by-line"> <i>02 Mar 2020</i> </time>
+	  	<p><p>lambdas allow you to <em>define</em> a block</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">greeting</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">{</span> <span class="s2">"Hello, world!"</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>lambdas are anonymous when they are not assigned to a variable</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span>
+</code></pre></div></div>
+
+<p>lambdas aren’t executed when they are defined, they are executed then they are called</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">add_one</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span>
+<span class="n">add_one</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> <span class="c1"># 10</span>
+</code></pre></div></div>
+
+<p>lambdas can be called a couple different ways</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">add_one</span><span class="o">.</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> <span class="c1"># 10</span>
+<span class="n">add_one</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="c1"># 10</span>
+</code></pre></div></div>
+
+<h3 id="example-use">example use</h3>
+
+<p>Define a lambda to use a custom method with map</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="n">add_one</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span>
+  <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">].</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="n">add_one</span><span class="p">)</span> <span class="c1"># [11, 21 31]</span>
+</code></pre></div></div>
+
+<p>Chain lambdas together (currying) for a functional style</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">add_one</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span>
+<span class="n">double_up</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">}</span>
+<span class="n">decorate</span> <span class="o">=</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="p">{</span> <span class="s2">" -</span><span class="si">#{</span><span class="n">x</span><span class="si">}</span><span class="s2">- "</span> <span class="p">}</span>
+<span class="n">all</span> <span class="o">=</span> <span class="n">add_one</span> <span class="o">&gt;&gt;</span> <span class="n">double_up</span> <span class="o">&gt;&gt;</span> <span class="n">decorate</span>
+<span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">].</span><span class="nf">map</span><span class="p">(</span><span class="o">&amp;</span><span class="n">all</span><span class="p">)</span> <span class="c1"># [" -22- ", " -42- ", " -62- "]</span>
+</code></pre></div></div>
+
+<h3 id="references">references</h3>
+
+<p><a href="https://www.honeybadger.io/blog/using-lambdas-in-ruby/">https://www.honeybadger.io/blog/using-lambdas-in-ruby/</a></p>
+
+<p><a href="https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/">https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/</a></p>
+
+<h5 id="stabby-lambda-syntax-was-introduced-in-ruby-19">Stabby lambda syntax was introduced in Ruby 1.9</h5>
+</p>
+	  </li>
+
+    
+
+</ul>
+
+
+	  </main>
+		
+		  <!-- Pagination links -->
+      
+        <div class="pagination">
+          
+            <span class="page-item">&laquo;</span>
+          
+        
+          
+            
+              <span class="page-item">1</span>
+            
+          
+            
+              <a href="/page2/" class="page-item">2</a>
+            
+          
+        
+          
+            <a href="/page2/" class="page-item">&raquo;</a>
+          
+        </div>
+        
+
+	  </div>
+	    
+	    <!-- Footer -->
+	    <footer><span>Find a mistake? <a href="https://twitter.com/veronica_coding">Let me know.</a></span></footer>
+
+
+	    <!-- Script -->
+      <script src="/js/main.js"></script>	
+
+
+	</div>
+</body>
+</html>

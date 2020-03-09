@@ -1,0 +1,28 @@
+I"<p>Remember to prefix the method with <code class="highlighter-rouge">helper.</code> to run in rails console.</p>
+
+<p>Given a helper method like this:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">module</span> <span class="nn">PostHelper</span>
+  <span class="k">def</span> <span class="nf">markdown</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="p">[</span>
+      <span class="ss">no_intra_emphasis: </span><span class="kp">true</span><span class="p">,</span> 
+      <span class="ss">fenced_code_blocks: </span><span class="kp">true</span><span class="p">,</span>
+      <span class="ss">gh_blockcode: </span><span class="kp">true</span><span class="p">,</span>   
+      <span class="ss">disable_indented_code_blocks: </span><span class="kp">true</span><span class="p">,</span>
+      <span class="ss">prettify: </span><span class="kp">true</span>
+    <span class="p">]</span>
+    <span class="n">markdown</span> <span class="o">=</span> <span class="no">Redcarpet</span><span class="o">::</span><span class="no">Markdown</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="no">Redcarpet</span><span class="o">::</span><span class="no">Render</span><span class="o">::</span><span class="no">HTML</span><span class="p">,</span> <span class="o">*</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">markdown</span><span class="p">.</span><span class="nf">render</span><span class="p">(</span><span class="n">text</span><span class="p">).</span><span class="nf">html_safe</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>To test in <code class="highlighter-rouge">rails console</code> try this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rails console
+Loading development environment (Rails 6.0.1)
+[1] pry(main)&gt; helper.markdown("Hello, world!")
+=&gt; "&lt;p&gt;Hello, world!&lt;/p&gt;\n"
+[2] pry(main)&gt;
+</code></pre></div></div>
+:ET
