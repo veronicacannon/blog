@@ -1,0 +1,18 @@
+I"ü<p>Use standard Windows networking paths to view your Linux folders using Windows Explorer.  In the search box, enter:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\\wsl$
+</code></pre></div></div>
+
+<p>That will bring you to the root directory of your Linux install.  To get to your home directory, try something like this, with your version of Linux.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\\wsl$\Ubuntu-18.04\home\
+</code></pre></div></div>
+
+<p>Use Visual Studio Code if you want an editor that works wonderfully with WSL.  Click on the icon on the bottom left corner to connect to your Linux install.</p>
+
+<h3 id="references">references</h3>
+
+<p><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">https://docs.microsoft.com/en-us/windows/wsl/install-win10</a></p>
+
+<h4 id="windows-subsystem-linux-runs-under-insider-build-for-windows-10">Windows Subsystem Linux runs under Insider Build for Windows 10.</h4>
+:ET

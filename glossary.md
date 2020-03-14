@@ -5,6 +5,11 @@ description: This glossary is a random collection of definitions.
 ---
 # Glossary
 
+## WSL
+Windows Subsystem Linux - a way to run Linux on your Windows 10 computer.
+
+---
+
 ## WIMP
 Windows
 Icons
