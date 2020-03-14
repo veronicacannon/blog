@@ -7,13 +7,13 @@ header: WSL (Windows Subsystem Linux) Folder in Windows
 Use standard Windows networking paths to view your Linux folders using Windows Explorer.  In the search box, enter:
 
 ```
-\\wsl$
+  \\wsl$
 ```
 
 That will bring you to the root directory of your Linux install.  To get to your home directory, try something like this, with your version of Linux.
 
 ```
-\\wsl$\Ubuntu-18.04\home\
+  \\wsl$\Ubuntu-18.04\home\
 ```
 
 Use Visual Studio Code if you want an editor that works wonderfully with WSL.  Click on the icon on the bottom left corner to connect to your Linux install.
