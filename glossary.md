@@ -59,3 +59,20 @@ A URN is similar to a person's name, while a URL is like a street address. The U
         A URL is a URI
         A URI is not necessarily a URL
 
+## Constant Lookup Operator 
+The double colon :: in Ruby is the constant lookup operator.  It's used to 
+scope any constant in a module.
+
+```ruby
+module TaxRate
+  BASE = 0.75
+
+  class Calculated
+    def max
+      1.125
+    end
+  end
+end
+puts TaxRate::BASE
+puts TaxRate::Calculated.new.max
+```
